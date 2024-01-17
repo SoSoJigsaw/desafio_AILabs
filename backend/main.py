@@ -1,12 +1,16 @@
 from openai import OpenAI
 from flask import Flask, jsonify
 from sugestoesPesquisa import sugestoes_aleatorio, pesquisa_pelo_id, todos_assuntos, pesquisa_pelo_assunto
+import json
 
 app = Flask(__name__)
 
 
 # Setando API Key
-client = OpenAI(api_key="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")
+with open("configKey.json") as config_file:
+    config = json.load(config_file)
+
+client = OpenAI(api_key=config["openai_api_key"])
 
 messages = [
     {"role": "system", "content": "Você é um assistente treinado para gerar ideias inovadoras para startups. Age de "
