@@ -22,7 +22,9 @@ messages = [
 @app.route('/resposta/<string:resposta>', methods=['GET'])
 def resposta(resposta):
 
-    messages.append({"role": "user", "content": "Responda minha pergunta em até 250 palavras: " + resposta})
+    messages.append({"role": "user", "content": "Responda minha pergunta em até 250 palavras. Não deixe o assunto ser "
+                                                "desviado do assunto sobre startups, empreendedorismo e inovaçao!: "
+                                                + resposta})
 
     response = client.chat.completions.create(model="gpt-3.5-turbo", messages=messages, temperature=1, max_tokens=1000)
 
@@ -60,6 +62,8 @@ def sugestoes(sugestoes):
 
 @app.route('/resposta-sugestao/<string:respostaSugestao>', methods=['GET'])
 def respostaSugestao(respostaSugestao):
+
+    respostaSugestao = respostaSugestao[:-34]
 
     messages.append({"role": "user", "content": "Gostaria de saber mais, em até 250 palavras, sobre: "
                                                 + respostaSugestao})
