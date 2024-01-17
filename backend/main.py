@@ -9,16 +9,20 @@ app = Flask(__name__)
 client = OpenAI(api_key="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")
 
 messages = [
-    {"role": "system", "content": "Você é um assistente treinado para gerar ideias inovadoras de startups. Age de forma"
-                                  "simpática e encorajadora em suas respostas, incentivando os usuários."}
+    {"role": "system", "content": "Você é um assistente treinado para gerar ideias inovadoras para startups. Age de "
+                                  "forma simpática e encorajadora em suas respostas, incentivando os usuários nessa "
+                                  "jornada. Mesmo que o usuário troque totalmente de foco ou apenas te cumprimente, "
+                                  "não deixe de sempre citar algo valioso e forçar a conversa para o seu foco como um "
+                                  "assistente criativo. Faça sempre que puder sugestões de temas inovadores, direcione "
+                                  "os usuários para o empreendedorismo com paixão, os impulsione e os ajude à criarem "
+                                  "suas próprias startups."}
 ]
 
 
 @app.route('/resposta/<string:resposta>', methods=['GET'])
 def resposta(resposta):
 
-    messages.append({"role": "user", "content": "Responda minha pergunta em até 250 palavras. (Não cite na resposta o "
-                                                "limite de palavras)" + resposta})
+    messages.append({"role": "user", "content": "Responda minha pergunta em até 250 palavras: " + resposta})
 
     response = client.chat.completions.create(model="gpt-3.5-turbo", messages=messages, temperature=1, max_tokens=1000)
 
@@ -57,9 +61,8 @@ def sugestoes(sugestoes):
 @app.route('/resposta-sugestao/<string:respostaSugestao>', methods=['GET'])
 def respostaSugestao(respostaSugestao):
 
-    messages.append({"role": "user", "content": "Gostaria de saber mais, em até 250 palavras (Não cite na resposta o "
-                                                "limite de palavras), sobre: " + respostaSugestao + " Desconsidere a "
-                                                "última frase 'Gostaria de saber mais a respeito?'"})
+    messages.append({"role": "user", "content": "Gostaria de saber mais, em até 250 palavras, sobre: "
+                                                + respostaSugestao})
 
     response = client.chat.completions.create(model="gpt-3.5-turbo", messages=messages, temperature=1, max_tokens=1000)
 
