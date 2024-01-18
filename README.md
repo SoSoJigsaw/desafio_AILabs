@@ -20,7 +20,7 @@ Desenvolver uma aplicação que emprega a API do ChatGPT para gerar conceitos in
 ## Solução Proposta: 
 Criação de um software web baseado em REST API, com interface gráfica e de fácil utilização pelos usuários. Buscou-se modelar a API do ChatGPT ao máximo para aumentar a relevância de suas respostas referentes ao desejado, utilizando de todos os parâmetros úteis a esse propósito. 
 
-[![Home Software](https://raw.githubusercontent.com/SoSoJigsaw/desafio_AILabs/main/img/view-home.gif?token=GHSAT0AAAAAACMY4EEDGSZABMGFOEZ6F2G2ZNIPJXA)]
+[Home Software](https://raw.githubusercontent.com/SoSoJigsaw/desafio_AILabs/main/img/view-home.gif?token=GHSAT0AAAAAACMY4EEDGSZABMGFOEZ6F2G2ZNIPJXA)
 
 ## Tecnologias utilizadas:
 - <b>Flask (Python):</b> micro framework ideal para a criação de REST APIs. A API foi consumida neste ambiente, passando os dados relevantes ao frontend através de requisições, em suma, no método "GET". Além disso, permitiu a configuração e modelagem dos comportamentos do ChatGPT, assim como teve papel importante em armazenar uma lista de dicionários que é parte importante do projeto, pois que foram usados para dar aos usuários a possibilidade de terem "sugestões" de input, o que visa melhorar a sua experiência utilizando o software.
