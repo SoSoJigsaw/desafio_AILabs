@@ -34,7 +34,7 @@ Criação de um software web baseado em REST API, com interface gráfica e de f�
 - Interface intuitiva
 
 ## Manual de Uso
-<a rel="https://github.com/SoSoJigsaw/desafio_AILabs/blob/main/Manual%20de%20Uso.md">Acesse aqui</a> o material completo. Desde a instalação até o uso das funcionalidades.
+[Acesse aqui](https://github.com/SoSoJigsaw/desafio_AILabs/blob/main/Manual%20de%20Uso.md) o material completo. Desde a instalação até o uso das funcionalidades.
 
 ## Utilização da API ChatGPT (GPT-3.5-Turbo)
 
