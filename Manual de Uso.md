@@ -1,4 +1,4 @@
-# Manual de Uso
+# Manual de Uso 📘
 
 ## Menu:
 - [Preparando o Ambiente](#Preparando-o-Ambiente)
