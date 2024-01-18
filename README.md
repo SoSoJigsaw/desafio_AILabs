@@ -119,7 +119,7 @@ def pesquisa_pelo_id(id):
 ```
 
 ## Frontend com Vue.js e Typescript
-Foi criado um projeto singlepage que conta com poucos `components` e `views`, tendo apenas três `routes`. As requisições ao backend, para receber os dados da API, foram feitos através da biblioteca `axios` de forma assíncrona (`async`). A partir daí, finalmente, os dados podiam serem exebidos na interface, assim como a interação do usuário com o sistema.
+Foi criado um projeto singlepage que conta com poucos `components` e `views`, tendo apenas três `routes`. As requisições ao backend, para receber os dados da API, foram feitos através da biblioteca `axios` de forma assíncrona (`async`). A partir daí, finalmente, os dados podiam serem exibidos na interface, assim como a interação do usuário com o sistema.
 ```typescript
  async receberResposta(question) {
 
