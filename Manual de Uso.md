@@ -54,6 +54,8 @@
 
 ### ATENÇÃO: Para o uso da aplicação, é necessário que tanto o projeto do `Flask` quanto o projeto do `Vue.js` estejam sendo executados ao mesmo tempo. 
 
+### NOTA: É necessário uma chave da API do ChatGPT. Por questões de segurança, minha chave está "criptografada", e por isso não se encontra no versionamento do código. Caso precise, entre em contato comigo (felipesobral_@hotmail.com).
+
     
 ## Usando o Software
 ![Home Software](https://github.com/SoSoJigsaw/desafio_AILabs/blob/main/img/view-home.gif)
