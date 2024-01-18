@@ -2,15 +2,15 @@
 [![AI Labs]()]
 
 ## Menu:
-[Sobre o desafio](#Sobreodesafio)
-[Requisitos](#Requisitos)
-[Solução Proposta](#SoluçãoProposta)
-[Tecnologias utilizadas](#Tecnologiasutilizadas)
-[Funcionalidades](#Funcionalidades)
-[Manual de Uso](#ManualdeUso)
-[Utilização da API ChatGPT (GPT-3.5-Turbo)](#UtilizaçãodaAPIChatGPT(GPT-3.5-Turbo))
-[Criação de REST API com Flask](#CriaçãodeRESTAPIcomFlask)
-[Frontend com Vue.js e Typescript](#FrontendcomVue.jseTypescript)
+- [Sobre o desafio](#Sobre-o-desafio)
+- [Requisitos](#Requisitos)
+- [Solução Proposta](#Solução-Proposta)
+- [Tecnologias utilizadas](#Tecnologias-utilizadas)
+- [Funcionalidades](#Funcionalidades)
+- [Manual de Uso](#Manual-de-Uso)
+- [Utilização da API ChatGPT (GPT-3.5-Turbo)](#Utilização-da-API-ChatGPT-GPT-3.5-Turbo)
+- [Criação de REST API com Flask](#Criação-de-REST-API-com-Flask)
+- [Frontend com Vue.js e Typescript](#Frontend-com-Vue.js-e-Typescript)
 
 ## Sobre o desafio: 
 Desenvolver uma aplicação que emprega a API do ChatGPT para gerar conceitos inovadores de startups com base nos inputs dos usuários. A ferramenta deve propor ideias de startups conforme os inputs dos usuários.
