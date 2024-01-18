@@ -1,5 +1,4 @@
-# Desafio AI Labs
-[!AI Labs](https://raw.githubusercontent.com/SoSoJigsaw/desafio_AILabs/main/img/logo.png?token=GHSAT0AAAAAACMY4EED3H6CJVGUC2LCXRM4ZNIN7YQ)
+# Desafio AI Labs - API ChatGPT3.5 🚀
 
 ## Menu:
 - [Sobre o desafio](#Sobre-o-desafio)
@@ -20,7 +19,8 @@ Desenvolver uma aplicação que emprega a API do ChatGPT para gerar conceitos in
 
 ## Solução Proposta: 
 Criação de um software web baseado em REST API, com interface gráfica e de fácil utilização pelos usuários. Buscou-se modelar a API do ChatGPT ao máximo para aumentar a relevância de suas respostas referentes ao desejado, utilizando de todos os parâmetros úteis a esse propósito. 
-[![Home Software]()]
+
+[![Home Software](https://raw.githubusercontent.com/SoSoJigsaw/desafio_AILabs/main/img/view-home.gif?token=GHSAT0AAAAAACMY4EEDGSZABMGFOEZ6F2G2ZNIPJXA)]
 
 ## Tecnologias utilizadas:
 - <b>Flask (Python):</b> micro framework ideal para a criação de REST APIs. A API foi consumida neste ambiente, passando os dados relevantes ao frontend através de requisições, em suma, no método "GET". Além disso, permitiu a configuração e modelagem dos comportamentos do ChatGPT, assim como teve papel importante em armazenar uma lista de dicionários que é parte importante do projeto, pois que foram usados para dar aos usuários a possibilidade de terem "sugestões" de input, o que visa melhorar a sua experiência utilizando o software.
@@ -34,7 +34,7 @@ Criação de um software web baseado em REST API, com interface gráfica e de f�
 - Interface intuitiva
 
 ## Manual de Uso
-Acesse aqui o material completo. Desde a instalação até o uso das funcionalidades.
+<a rel="https://github.com/SoSoJigsaw/desafio_AILabs/blob/main/Manual%20de%20Uso.md">Acesse aqui</a> o material completo. Desde a instalação até o uso das funcionalidades.
 
 ## Utilização da API ChatGPT (GPT-3.5-Turbo)
 
@@ -128,7 +128,7 @@ def pesquisa_pelo_id(id):
 ```
 
 ## Frontend com Vue.js e Typescript
-Foi criado um projeto singlepage que conta com poucos `components` e `views`, tendo apenas três `routes`. As requisições ao backend, para receber os dados da API, foram feitos através da biblioteca `axios` de forma assíncrona (`async`). A partir daí, finalmente, os dados podiam serem exibidos na interface, assim como a interação do usuário com o sistema.
+Foi criado um projeto singlepage que conta com poucos `components` e `views`, tendo apenas três `routes`. As requisições ao backend, para receber os dados da API, foram feitos através da biblioteca `axios` de forma assíncrona (`async`).
 ```typescript
  async receberResposta(question) {
 
@@ -136,21 +136,6 @@ Foi criado um projeto singlepage que conta com poucos `components` e `views`, te
                   const response = await axios.get('http://127.0.0.1:5000/resposta/' + question, {
                   cancelToken: source.token,
                 });
-
-                  this.respostas.push(response.data);
-                  this.question = '';
-
-                  this.data.push({ resposta: response.data });
-
-                  const suges = this.respostas.length - 1;
-
-                  const res = await axios.get('http://127.0.0.1:5000/sugestoes/' + suges, {
-                    cancelToken: source.token,
-                  });
-                  
-                  this.sugestoes.push(res.data);
-
-                  this.data.push({ sugestao: res.data });
                 
                 } catch (error) {
 
@@ -162,11 +147,7 @@ Foi criado um projeto singlepage que conta com poucos `components` e `views`, te
                     console.error('Erro na requisição:', error.message);
                   }
                 }
-
-                this.loading = false;
-
-              }
-                
+              }                
             },
 ```
 
