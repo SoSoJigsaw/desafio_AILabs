@@ -1,5 +1,5 @@
 # Desafio AI Labs
-[![AI Labs]()]
+[![AI Labs](https://raw.githubusercontent.com/SoSoJigsaw/desafio_AILabs/main/img/logo.png?token=GHSAT0AAAAAACMY4EED3H6CJVGUC2LCXRM4ZNIN7YQ)]
 
 ## Menu:
 - [Sobre o desafio](#Sobre-o-desafio)
