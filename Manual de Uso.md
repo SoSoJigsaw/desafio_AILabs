@@ -67,6 +67,8 @@ Toda pergunta realizada pelo usuário resultará em duas respostas do ChatGPT, c
 
 ![resposta](https://github.com/SoSoJigsaw/desafio_AILabs/blob/main/img/Screenshot%202024-01-18%20104853.png)
 
+![sugestao](https://github.com/SoSoJigsaw/desafio_AILabs/blob/main/img/Screenshot%202024-01-18%20112653.png)
+
 ### 2. Selecionar uma sugestão
 As sugestões são perguntas já pré-criadas (através deste mesmo modelo usado no projeto, durante a fase de testes) que possuem grande relevância em temáticas de startups, como tecnologia, empreendedorismo e inovação. Na página inicial, aparecerá aleatóriamente seis opções de sugestões (há mais de 150 sugestões, mas na página principal aparece apenas seis aleatoriamente, ou seja, toda vez que carregar a página, as sugestões mudarão). Caso o usuário se identifique e tenha interesse em utilizar alguma dessas sugestões, ele apenas precisa clicar em seu card que automaticamente se torna um input do usuário, e assim se inicia a conversa com o ChatGPT utilizando a mesma regra de quando se utiliza o chat de forma livre (com resposta em verde, que são mais criativas e longas, e mensagens em marrom, que não mais sucintas e faz proposições de tópicos relevantes).
 
