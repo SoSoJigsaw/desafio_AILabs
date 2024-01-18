@@ -2,6 +2,15 @@
 [![AI Labs]()]
 
 ## Menu:
+[Sobre o desafio](#Sobreodesafio)
+[Requisitos](#Requisitos)
+[Solução Proposta](#SoluçãoProposta)
+[Tecnologias utilizadas](#Tecnologiasutilizadas)
+[Funcionalidades](#Funcionalidades)
+[Manual de Uso](#ManualdeUso)
+[Utilização da API ChatGPT (GPT-3.5-Turbo)](#UtilizaçãodaAPIChatGPT(GPT-3.5-Turbo))
+[Criação de REST API com Flask](#CriaçãodeRESTAPIcomFlask)
+[Frontend com Vue.js e Typescript](#FrontendcomVue.jseTypescript)
 
 ## Sobre o desafio: 
 Desenvolver uma aplicação que emprega a API do ChatGPT para gerar conceitos inovadores de startups com base nos inputs dos usuários. A ferramenta deve propor ideias de startups conforme os inputs dos usuários.
@@ -18,14 +27,14 @@ Criação de um software web baseado em REST API, com interface gráfica e de f�
 - <b>Vue.js (Typescript):</b> framework onde o projeto frontend foi desenvolvido, em formato singlepage, proporcionando uma interface ao usuário agradável e rápida.
 - <b>GPT-3.5-Turbo:</b> modelo escolhido no catálogo da OpenAI para utilizar o API do ChatGPT
 
-## Manual de Uso
-Acesse aqui o material completo.
-
 ## Funcionalidades
 - Conversa interativa com o ChatGPT-3.5 modificado para atender aos usuários que buscam ideias em inovação, empreendedorismo e startups
 - Dois perfis diferentes de resposta: um que prevalece a criatividade, e o outro mais analítico
 - Mais de 150 sugestões de perguntas sobre startups em diversas áreas de interesse, geradas com este mesmo modelo desenvolvido no projeto
 - Interface intuitiva
+
+## Manual de Uso
+Acesse aqui o material completo. Desde a instalação até o uso das funcionalidades.
 
 ## Utilização da API ChatGPT (GPT-3.5-Turbo)
 
@@ -55,7 +64,7 @@ messages.append({"role": "user", "content": "Sugira de forma sucinta, usando no 
                                                 "a importância do tópico para a área de startups e inovação: "
                                                 + sugestoes})
 ```
-O uso do messages foi o primordial para chegar aos resultados esperados, acima do `temperature` e do `max_tokens`, e assim se mostra a melhor maneira de programar as respostas da ferramenta.
+O uso do `messages` foi o primordial para chegar aos resultados esperados, acima do `temperature` e do `max_tokens`, e assim se mostra a melhor maneira de programar as respostas da ferramenta.
 
 ### 3. Testagem e base de dados
 Foram realizadas cerca de 250 `requests` à API, com diversos testes ao nível das respostas. Dentro desses testes, assumindo um papel de alguém que deseja abrir uma startup, o sistema foi capaz de me dar diversas ideais de aplicação, e cerca de 150 delas foram armazenadas em uma lista de dicionários em um arquivo Python. Esses dados se tornaram relevantes para uma funcionalidade do projeto, que é o de sugerir perguntas pertinentes aos usuários. Portanto, essa base de dados que foi criada a partir de testes acabou se tornando uma utilidade ao projeto, que pode ajudar um usuário em seu processo criativo. Além disso, todas as perguntas foram categorizadas, e dentro do software é possível acessá-las e usá-las como input.
